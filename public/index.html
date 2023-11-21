@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./styles/style.css">
+            <script src="https://js.stripe.com/v3/"></script>
+            <script>
+                var stripe = Stripe('pk_test_51OCT4YDKLLXw74URfKWpQubx5MOi3DoUcx3Ou9skVOjQfY91vm5xRyKayl2G5RzsSDLyHNRW0wgu042FJZ5ylGx100rAizOT3i');
+            </script>
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            <title>Tienda Online</title>
+        </head>
+<body>
+<!-- El navbar -->
+<header>
+    <div class="nav container">
+        <a href="#" class="logo">Videogames Store 🎮 </a>
+        <i class="bx bx-shopping-bag" id="cart-icon">
+            <span id="cart-quantity">0</span>
+        </i>
+    </div>
+</header>
+
+<!-- Carrito -->
+<div class="cart">
+    <h2 class="cart-tittle">Tu carrito 🛒 </h2>
+    <div class="cart-content">
+    </div>
+    <hr class="separator">
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+    </div>
+    <button type="button" class="btn-buy green-btn">Pagar ahora</button>
+    <i class="bx bx-x" id="close-cart"></i>
+</div>
+
+<!-- Productos -->
+<section class="shop container">
+    <h2 class="section-tittle">Productos 🏷️ </h2>
+    <div class="shop-content">
+        <!-- Contenido 1 -->
+        <div class="product-box" data-price="12500">
+            <img src="images/PS4.jpg" class="product img" alt="">
+            <h2 class="product-tittle">PS4 Fat 500gb</h2>
+            <span class="price">$12,500</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        
+        <!-- Contenido 2 -->
+        <div class="product-box">
+            <img src="images/XBOX 36.jpg"
+             class="product img"
+              alt="">
+              <h2 class="product-tittle">Xbox 360 500gb</h2>
+              <span class="price">$7,500</span>
+              <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Contenido 3 -->
+        <div class="product-box">
+            <img src="images/xbox series.jfif"
+             class="product img"
+              alt="">
+              <h2 class="product-tittle">Xbox Series</h2>
+              <span class="price">$15,000</span>
+              <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Contenido 4 -->
+        <div class="product-box">
+            <img src="images/Xbox one.jpg"
+             class="product img"
+              alt="">
+              <h2 class="product-tittle">Xbox One S</h2>
+              <span class="price">$5000</span>
+              <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Contenido 5 -->
+        <div class="product-box">
+            <img src="images/ps5.jpg"
+             class="product img"
+              alt="">
+              <h2 class="product-tittle">PlayStation 5</h2>
+              <span class="price">$37,000</span>
+              <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Contenido 6 -->
+        <div class="product-box">
+            <img src="images/nintendo.jpg"
+             class="product img"
+              alt="">
+              <h2 class="product-tittle">Nintendo switch</h2>
+              <span class="price">$13,500</span>
+              <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Contenido 7 -->
+        <div class="product-box">
+            <img src="images/wii.jpg"
+             class="product img"
+              alt="">
+              <h2 class="product-tittle">Nintendo Wii</h2>
+              <span class="price">$5,000</span>
+              <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Contenido 8 -->
+        <div class="product-box">
+            <img src="images/Gamecube-console.jpg"
+             class="product img"
+              alt="">
+              <h2 class="product-tittle">Nintendo Gamecube</h2>
+              <span class="price">$3,000</span>
+              <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+    </div>
+</section>
+
+<script src="./js/cart.js"></script>
+<script src="./js/data.js"></script>
+</body>
+</html>
